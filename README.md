@@ -44,6 +44,14 @@ Vocabulary size (ar/all)
 
 
 
-| Model | Authors  | Arabic composition | Vocabulary size (Ar/all) | Num Tokens (Ar/all) | Data Size | Num of parameters | Num of Steps | 
-| ------| -------  | ------------------ | ------------------------ | ------------------- | --------- | ----------------- | ------------ | 
+| Model            | Authors  | Arabic composition | Vocabulary size (Ar/all) | Num Tokens (Ar/all) | Data Size | Num of parameters | Num of Steps | 
+| ---------------- | -------  | ------------------ | ------------------------ | ------------------- | --------- | ----------------- | ------------ | 
+| XLM-RoBERTa-base | -------  | Partially (MSA+DA) | 14K/250K                 | 2.9B/295B           |  2.5TB    | 278M              | -            | 
+| mBERT-uncased    | -------  | Partially (MSA+DA) | 5K/110K                  | 153M/1.5B           | -         | 167M              | -            | 
+| AraBertv0.2      | -------  | Fully (MSA)        | 60K/64K                  | 2.5B/2.5B           |  77GB     | 136M              | 3M           | 
+| CameL-DA         | -------  | Fully (DA)         | 30K/30K                  | 5.8B/5.8B           |  54GB     | 109M              | 1M           | 
+| Qarib            | -------  | Fully (MSA+DA)     | 64K/64K                  | 14B/14B             |  -        | 135M              | 10M          | 
+| MarBERT          | -------  | Fully (MSA+DA)     | 100K/100K                | 15.6B/15.6B         |  128GB    | 163M              | 17M          | 
+| DBERT            | AIOX LABS\ /SI2M LAB INSEA  | Fully (DA) | 80K/80K       | 2.9B/295B           |  691MB    | 147M              | 235k            | 
+
 
