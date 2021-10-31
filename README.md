@@ -98,15 +98,4 @@ These checkpoints are destined exclusively for research, any commercial use shou
 
 # Acknowledgments
 We gratefully acknowledge Google’s TensorFlow Research Cloud (TRC) program for providing us with free Cloud TPUs.
-# Citation 
-To site this repository  use 
  
-
-```bibtex
-@misc{Dbert,
-    author       = {Kamel Gaanoun,Imade  Benelallam, Anass Allak,Naira abdou Mohamed}
-    title        = {DarijaBERT: BERT for Moroccan Arabic dialect},
-    month        = Nov,
-    year         = 2021,
-    }
-```
