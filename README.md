@@ -1,8 +1,8 @@
-# What is DBert
+# What is DarijaBert
 <p align="center">
   <img  src="./Logo.jpeg">
 </p>
-DBert is the first Open Source BERT model for the Moroccan Arabic dialect called “Darija”. It is based on the same architecture as Bert-base, but without the Next Sentence Prediction (NSP) objective. This model was trained on a total of ~3 Million sequences of Darija dialect representing 691MB of text or a total of ~100M tokens.
+DarijaBert is the first Open Source BERT model for the Moroccan Arabic dialect called “Darija”. It is based on the same architecture as Bert-base, but without the Next Sentence Prediction (NSP) objective. This model was trained on a total of ~3 Million sequences of Darija dialect representing 691MB of text or a total of ~100M tokens.
 What has been released in this repository?
 #We are releasing the following :
 
