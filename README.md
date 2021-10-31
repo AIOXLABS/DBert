@@ -82,12 +82,12 @@ We present the sentiment analysis F1-scores obtained with DarijaBert. We first r
 | Model            | MSTD \(macro F1-score)\Positive/Negative/Objective | MSTD \ (F1-score -Sar/macro-)\Positive/Negative/Objective/Sarcasm | 
 | ---------------- | ---------------- | ---------------- | 
 | XLM-RoBERTa-base | 40.03  | -26.02/32.15- |  
-| mBERT-uncased    | 76.44  | -39.21/41.61- |   
-| AraBertv0.2      | 77.90  | -40.70/50.34- |  
-| CameL-DA         | 80.62  | -39.44/52.22- |   
-| Qarib            |**81.52**  | -36.20/34.85- |   
-| MarBERT          | 84.25  | -42.53/53.62- |   
-| DBERT            |  84.48   | **-49.87/58.81-** | 
+| mBERT-uncased    | 45.00  | -39.21/41.61- |   
+| AraBertv0.2      | 61.42  | -40.70/50.34- |  
+| CameL-DA         | 66.04  | -39.44/52.22- |   
+| Qarib            |**69.88**  | -36.20/34.85- |   
+| MarBERT          | 68.74  | -42.53/53.62- |   
+| DBERT            |  69.06   | **-49.87/58.81-** | 
 
 ##Loading the model
 
@@ -99,7 +99,9 @@ DarijaBert_model = AutoModel.from_pretrained("Kamel/DarijaBERT")
 ```
 
 Checkpoints for both frameworks are available for downloading in the links below:
+
 https://huggingface.co/Kamel/DarijaBERT
+
 These checkpoints are destined exclusively for research, any commercial use should be done with authors’ permission, please contact via email
 
 # Acknowledgments
