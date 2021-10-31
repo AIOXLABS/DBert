@@ -13,9 +13,9 @@ Example notebook to finetune the model
 # Pretraining data
 
 The model was trained on a dataset issued from three different sources:
-Stories written in Darija scrapped from a dedicated website
-Youtube comments from 40 different Moroccan channels
-Tweets crawled based on a list of Darija keywords. 
+* Stories written in Darija scrapped from a dedicated website
+* Youtube comments from 40 different Moroccan channels
+* Tweets crawled based on a list of Darija keywords. 
 
 Concatenating these datasets sums up to 691MB of text.
 
