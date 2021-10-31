@@ -61,6 +61,8 @@ Vocabulary size (ar/all)
 This task was conducted on two datasets:
 * MSDA dialect detection dataset ([Boujou et al](https://www.researchgate.net/publication/349520583_An_open_access_NLP_dataset_for_Arabic_dialects_Data_collection_labeling_and_model_construction) : ~50K social media posts in different Arabic dialects, transformed to a binary dataset, Moroccan dialect Vs other dialects
 * MADAR ([Bouamor et al.](https://aclanthology.org/L18-1535/) ) :  112K sequences in 25 dialects, transformed to a binary dataset, Moroccan dialect (Rabat and Fes cities)  Vs other dialects
+
+
 | Model            | MSDA (F1-score)  | MADAR (F1-score) | 
 | ---------------- | ---------------- | ---------------- | 
 | XLM-RoBERTa-base | 70.41  | 84.89 |  
@@ -69,7 +71,9 @@ This task was conducted on two datasets:
 | CameL-DA         | 80.62  | 92.08 |   
 | Qarib            | 81.52  | 92.28 |   
 | MarBERT          | 84.25  | 92.00 |   
-| DBERT            | **84.48** | **92.87** | 
+| DBERT            | **84.48** | **92.87** |
+
+
 ## Sentiment Analysis
 
 In order to detect the sentiment polarity of moroccan dialect texts, we finetune the model and predict on the MSTD (Moroccan Sentiment Twitter Dataset) dataset ([Mihi et al.](https://thesai.org/Publications/ViewPaper?Volume=11&Issue=10&Code=IJACSA&SerialNo=45) ) composed of  12K tweets labeled as Negative, Objective, Positive or Sarcastic.
