@@ -52,7 +52,7 @@ Vocabulary size (ar/all)
 | CameL-DA         | -------  | Fully (DA)         | 30K/30K                  | 5.8B/5.8B           |  54GB     | 109M              | 1M           | 
 | Qarib            | -------  | Fully (MSA+DA)     | 64K/64K                  | 14B/14B             |  -        | 135M              | 10M          | 
 | MarBERT          | -------  | Fully (MSA+DA)     | 100K/100K                | 15.6B/15.6B         |  128GB    | 163M              | 17M          | 
-| **DBERT**            | **AIOX LABS\ /SI2M LAB INSEA**  | **Fully (DA)** | **80K/80K**       | **2.9B/295B**           |  691MB**    | **147M**              | **235k**            | 
+| **DBERT**            | **AIOX LABS\ /SI2M LAB INSEA**  | **Fully (DA)** | **80K/80K**       | **2.9B/295B**           |  **691MB**    | **147M**              | **235k**            | 
 
 ## Dialect Identification
 
@@ -73,8 +73,7 @@ MADAR (Référence) :  112K sequences in 25 dialects, transformed to a binary da
 In order to detect the sentiment polarity of moroccan dialect texts, we finetune the model and predict on the MSTD (Moroccan Sentiment Twitter Dataset) dataset (référence) composed of  12K tweets labeled as Negative, Objective, Positive or Sarcastic.
 
 We present the sentiment analysis F1-scores obtained with DarijaBert. We first run the model on the dataset excluding sarcastic tweets, and then including them.
-| Model            | MSTD \(macro F1-score)\Positive/Negative/Objective | MSTD \ (F1-score -Sar/macro-)\
-Positive/Negative/Objective/Sarcasm | 
+| Model            | MSTD \(macro F1-score)\Positive/Negative/Objective | MSTD \ (F1-score -Sar/macro-)\Positive/Negative/Objective/Sarcasm | 
 | ---------------- | ---------------- | ---------------- | 
 | XLM-RoBERTa-base | 40.03  | -26.02/32.15- |  
 | mBERT-uncased    | 76.44  | -39.21/41.61- |   
