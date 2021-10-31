@@ -28,7 +28,7 @@ Concatenating these datasets sums up to 691MB of text.
 * Removing diacritics
 # Pretraining Process
 
-Same architecture as  [BERT-base] (https://arxiv.org/pdf/1810.04805.pdf) was used, but without the Next Sentence Prediction objective.
+Same architecture as  [BERT-base](https://arxiv.org/pdf/1810.04805.pdf) was used, but without the Next Sentence Prediction objective.
 Whole Word Masking (WWM)  with a probability of 15% was adopted
 The sequences were tokenized with a WordPiece Tokenizer from the [Huggingface Transformer library](https://huggingface.co/transformers/). We chose 128 as the maximum length of the input for the model.
 
