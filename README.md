@@ -26,3 +26,27 @@ Concatenating these datasets sums up to 691MB of text.
 * Keeping sequences with at least two arabic words
 * Removing Tatweel character '\\u0640'
 * Removing diacritics
+# Pretraining Process
+
+Same architecture as  [BERT-base] (https://arxiv.org/pdf/1810.04805.pdf) was used, but without the Next Sentence Prediction objective.
+Whole Word Masking (WWM)  with a probability of 15% was adopted
+The sequences were tokenized with a WordPiece Tokenizer from the [Huggingface Transformer library](https://huggingface.co/transformers/). We chose 128 as the maximum length of the input for the model.
+
+The vocabulary size is 80.000 wordpiece token
+
+The whole training was done on GCP Compute Engine using free cloud TPU v3.8 offered by Google's TensorFlow Research Cloud (TRC) program. It took 49 hours to run the 40 epochs of pretraining.
+
+# Downstream tasks 
+
+DarijaBert was fine tuned on 3 downstream tasks, namely Dialect Identification (DI), Sentiment Analysis (SA), and Topic Modeling (TM). The results were compared to 6 other models, which support arabic either fully or partially:
+
+Vocabulary size (ar/all)
+
+Data Size
+#Params
+#Steps
+
+
+| Model | Authors  | Arabic composition | Vocabulary size (Ar/all) | Num Tokens (Ar/all) | Data Size | Num of parameters | Num of Steps | 
+
+
