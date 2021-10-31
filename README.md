@@ -94,8 +94,8 @@ We present the sentiment analysis F1-scores obtained with DarijaBert. We first r
 The model can be loaded directly using the Huggingface library:
 ```
 from transformers import AutoTokenizer, AutoModel
-DarijaBert_tokenizer = AutoTokenizer.from_pretrained("HF_account/DarijaBert")
-DarijaBert_model = AutoModel.from_pretrained("HF_account/DarijaBert)
+DarijaBert_tokenizer = AutoTokenizer.from_pretrained("Kamel/DarijaBERT")
+DarijaBert_model = AutoModel.from_pretrained("Kamel/DarijaBERT")
 ```
 
 Checkpoints for both frameworks are available for downloading in the links below:
