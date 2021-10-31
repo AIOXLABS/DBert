@@ -42,11 +42,8 @@ DarijaBert was fine tuned on 3 downstream tasks, namely Dialect Identification (
 
 Vocabulary size (ar/all)
 
-Data Size
-#Params
-#Steps
 
 
 | Model | Authors  | Arabic composition | Vocabulary size (Ar/all) | Num Tokens (Ar/all) | Data Size | Num of parameters | Num of Steps | 
-
+| ------| -------  | ------------------ | ------------------------ | ------------------- | --------- | ----------------- | ------------ | 
 
