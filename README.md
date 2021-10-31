@@ -1,4 +1,4 @@
-# What is DarijaBert
+# What is DBert
 <p align="center">
   <img  src="./Logo.jpeg">
 </p>
