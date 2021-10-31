@@ -52,6 +52,51 @@ Vocabulary size (ar/all)
 | CameL-DA         | -------  | Fully (DA)         | 30K/30K                  | 5.8B/5.8B           |  54GB     | 109M              | 1M           | 
 | Qarib            | -------  | Fully (MSA+DA)     | 64K/64K                  | 14B/14B             |  -        | 135M              | 10M          | 
 | MarBERT          | -------  | Fully (MSA+DA)     | 100K/100K                | 15.6B/15.6B         |  128GB    | 163M              | 17M          | 
-| DBERT            | AIOX LABS\ /SI2M LAB INSEA  | Fully (DA) | 80K/80K       | 2.9B/295B           |  691MB    | 147M              | 235k            | 
+| **DBERT**            | **AIOX LABS\ /SI2M LAB INSEA**  | **Fully (DA)** | **80K/80K**       | **2.9B/295B**           |  691MB**    | **147M**              | **235k**            | 
 
+## Dialect Identification
 
+This task was conducted on two datasets:
+MSDA dialect detection dataset (Référence) : ~50K social media posts in different Arabic dialects, transformed to a binary dataset, Moroccan dialect Vs other dialects
+MADAR (Référence) :  112K sequences in 25 dialects, transformed to a binary dataset, Moroccan dialect (Rabat and Fes cities)  Vs other dialects
+| Model            | MSDA (F1-score)  | MADAR (F1-score) | 
+| ---------------- | ---------------- | ---------------- | 
+| XLM-RoBERTa-base | 70.41  | 84.89 |  
+| mBERT-uncased    | 76.44  | 90.35 |   
+| AraBertv0.2      | 77.90  | 90.32 |  
+| CameL-DA         | 80.62  | 92.08 |   
+| Qarib            | 81.52  | 92.28 |   
+| MarBERT          | 84.25  | 92.00 |   
+| DBERT            | **84.48** | **92.87** | 
+## Sentiment Analysis
+
+In order to detect the sentiment polarity of moroccan dialect texts, we finetune the model and predict on the MSTD (Moroccan Sentiment Twitter Dataset) dataset (référence) composed of  12K tweets labeled as Negative, Objective, Positive or Sarcastic.
+
+We present the sentiment analysis F1-scores obtained with DarijaBert. We first run the model on the dataset excluding sarcastic tweets, and then including them.
+| Model            | MSTD \(macro F1-score)\Positive/Negative/Objective | MSTD \ (F1-score -Sar/macro-)\
+Positive/Negative/Objective/Sarcasm | 
+| ---------------- | ---------------- | ---------------- | 
+| XLM-RoBERTa-base | 40.03  | -26.02/32.15- |  
+| mBERT-uncased    | 76.44  | -39.21/41.61- |   
+| AraBertv0.2      | 77.90  | -40.70/50.34- |  
+| CameL-DA         | 80.62  | -39.44/52.22- |   
+| Qarib            |**81.52**  | -36.20/34.85- |   
+| MarBERT          | 84.25  | -42.53/53.62- |   
+| DBERT            |  84.48   | **-49.87/58.81-** | 
+
+##Loading the model
+
+The model can be loaded directly using the Huggingface library:
+```
+from transformers import AutoTokenizer, AutoModel
+DarijaBert_tokenizer = AutoTokenizer.from_pretrained("HF_account/DarijaBert")
+DarijaBert_model = AutoModel.from_pretrained("HF_account/DarijaBert)
+```
+
+Checkpoints for both frameworks are available for downloading in the links below:
+ 
+These checkpoints are destined exclusively for research, any commercial use should be done with authors’ permission, please contact via email (email address)   
+
+# Acknowledgments
+We gratefully acknowledge Google’s TensorFlow Research Cloud (TRC) program for providing us with free Cloud TPUs.
+# 
