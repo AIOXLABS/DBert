@@ -95,8 +95,19 @@ DarijaBert_model = AutoModel.from_pretrained("HF_account/DarijaBert)
 
 Checkpoints for both frameworks are available for downloading in the links below:
  
-These checkpoints are destined exclusively for research, any commercial use should be done with authors’ permission, please contact via email (email address)   
+These checkpoints are destined exclusively for research, any commercial use should be done with authors’ permission, please contact via email
 
 # Acknowledgments
 We gratefully acknowledge Google’s TensorFlow Research Cloud (TRC) program for providing us with free Cloud TPUs.
-# 
+# Citation 
+To site this repository  use 
+ 
+
+```bibtex
+@misc{Dbert,
+    author       = {Kamel Gaanoun,Imade  Benelallam, Anass Allak,Naira abdou Mohamed}
+    title        = {DarijaBERT: BERT for Moroccan Arabic dialect},
+    month        = Nov,
+    year         = 2021,
+    }
+```
