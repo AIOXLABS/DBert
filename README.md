@@ -96,13 +96,13 @@ In order to detect the sentiment polarity of Moroccan dialect texts, we finetune
 We present the sentiment analysis F1-scores obtained with DarijaBERT. We first run the model on the dataset excluding sarcastic tweets, and then including them.
 | Model            | MSTD \(macro F1-score)\Positive/Negative/Objective | MSTD \ (F1-score -Sar/macro-)\Positive/Negative/Objective/Sarcasm | 
 | ---------------- | ---------------- | ---------------- | 
-| XLM-RoBERTa-base | 40.03  | -26.02/32.15- |  
-| mBERT-uncased    | 45.00  | -39.21/41.61- |   
-| AraBERTv0.2      | 61.42  | -40.70/50.34- |  
-| CameL-DA         | 66.04  | -39.44/52.22- |   
-| Qarib            |**69.88**  | -36.20/34.85- |   
-| MarBERT          | 68.74  | -42.53/53.62- |   
-| DarijaBERT            |  69.06   | **-49.32/58.81-** | 
+| XLM-RoBERTa-base | 40.03  | \[26.02/32.15\] |  
+| mBERT-uncased    | 45.00  | \[39.21/41.61\] |   
+| AraBERTv0.2      | 61.42  | \[40.70/50.34\] |  
+| CameL-DA         | 66.04  | \[39.44/52.22\] |   
+| Qarib            |**69.88**  | \[36.20/34.85\] |   
+| MarBERT          | 68.74  | \[42.53/53.62\] |   
+| DarijaBERT            |  69.06   | **\[49.32/58.81\]** | 
 
 ## Topic modeling
 Comming soon. 
