@@ -41,6 +41,18 @@ Concatenating these datasets sums up to 691MB of text.
 * The vocabulary size is 80.000 wordpiece token
 
 The whole training was done on GCP Compute Engine using free cloud TPU v3.8 offered by Google's TensorFlow Research Cloud (TRC) program. It took 49 hours to run the 40 epochs of pretraining.
+# Masking task
+Since DarijaBERT was treaned using Whole Word Masking, it  is capable of predicting  missing word  in sentence.
+```python
+from transformers import pipeline
+unmasker = pipeline('fill-mask', model='Kamel/DarijaBERT')
+unmasker(" اشنو [MASK] ليك ")
+
+{'score': 0.02539043314754963,
+  'sequence': 'اشنو سيفطو ليك',
+  'token': 25722,
+  'token_str': 'سيفطو'},
+```
 
 # Downstream tasks 
 
@@ -62,6 +74,7 @@ DarijaBERT was fine tuned on 3 downstream tasks, namely Dialect Identification (
 This task was conducted on two datasets:
 * MSDA dialect detection dataset ([Boujou et al](https://www.researchgate.net/publication/349520583_An_open_access_NLP_dataset_for_Arabic_dialects_Data_collection_labeling_and_model_construction)) : ~50K social media posts in different Arabic dialects, transformed to a binary dataset, Moroccan dialect Vs other dialects
 * MADAR ([Bouamor et al.](https://aclanthology.org/L18-1535/) ) :  112K sequences in 25 dialects, transformed to a binary dataset, Moroccan dialect (Rabat and Fes cities)  Vs other dialects
+
 [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/drive/1drU2CwZLtQ1BYLCuy_wXQhfWyL1ywvmK?usp=sharing)
 
 
