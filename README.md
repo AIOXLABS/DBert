@@ -95,7 +95,7 @@ This task was conducted on two datasets:
 In order to detect the sentiment polarity of Moroccan dialect texts, we finetune the model and predict on the MSTD (Moroccan Sentiment Twitter Dataset) dataset ([Mihi et al.](https://thesai.org/Publications/ViewPaper?Volume=11&Issue=10&Code=IJACSA&SerialNo=45) ) composed of  12K tweets labeled as Negative, Objective, Positive or Sarcastic.
 
 We present the sentiment analysis F1-scores obtained with DarijaBERT. We first run the model on the dataset excluding sarcastic tweets, and then including them.
-| Model            | MSTD \(macro F1-score)\Positive/Negative/Objective | MSTD \ (F1-score -Sar/macro-)\Positive/Negative/Objective/Sarcasm | 
+| Model            | MSTD \(macro F1-score)\Positive/Negative/Objective | MSTD \ (F1-score -Sar/macro-) <br \><sub><sup>Positive/Negative/Objective/Sarcasm</sup></sub>| 
 | ---------------- | ---------------- | ---------------- | 
 | XLM-RoBERTa-base | 40.03  | \[26.02/32.15\] |  
 | mBERT-uncased    | 45.00  | \[39.21/41.61\] |   
