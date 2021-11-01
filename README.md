@@ -62,7 +62,7 @@ DarijaBERT was fine tuned on 3 downstream tasks, namely Dialect Identification (
 This task was conducted on two datasets:
 * MSDA dialect detection dataset ([Boujou et al](https://www.researchgate.net/publication/349520583_An_open_access_NLP_dataset_for_Arabic_dialects_Data_collection_labeling_and_model_construction)) : ~50K social media posts in different Arabic dialects, transformed to a binary dataset, Moroccan dialect Vs other dialects
 * MADAR ([Bouamor et al.](https://aclanthology.org/L18-1535/) ) :  112K sequences in 25 dialects, transformed to a binary dataset, Moroccan dialect (Rabat and Fes cities)  Vs other dialects
-[![Open In Colab]](https://colab.research.google.com/drive/1drU2CwZLtQ1BYLCuy_wXQhfWyL1ywvmK?usp=sharing)
+[![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/drive/1drU2CwZLtQ1BYLCuy_wXQhfWyL1ywvmK?usp=sharing)
 
 
 | Model            | MSDA (F1-score)  | MADAR (F1-score) | 
