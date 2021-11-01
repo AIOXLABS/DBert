@@ -42,7 +42,7 @@ Concatenating these datasets sums up to 691MB of text.
 
 The whole training was done on GCP Compute Engine using free cloud TPU v3.8 offered by Google's TensorFlow Research Cloud (TRC) program. It took 49 hours to run the 40 epochs of pretraining.
 # Masking task
-Since DarijaBERT was treaned using Whole Word Masking, it  is capable of predicting  missing word  in sentence.
+Since DarijaBERT was trained  using Whole Word Masking, it  is capable of predicting  missing word  in sentence.
 ```python
 from transformers import pipeline
 unmasker = pipeline('fill-mask', model='Kamel/DarijaBERT')
