@@ -9,7 +9,6 @@ DarijaBERT is the first Open Source BERT model for the Moroccan Arabic dialect c
 
 We are releasing the following :
 
-* PyTorch training code based on HuggingFace trainer 
 * Pre-processing code
 * WordPiece tokenization code
 * Pre-trained model in both PyTorch and TensorFlow versions(future plan)
