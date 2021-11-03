@@ -2,7 +2,7 @@
 
 import string
 import re
-import strip_tatweel,strip_tashkeel
+from pyarabic.araby import strip_tatweel,strip_tashkeel
 
 def repted(text):
     text=re.sub(r'(.)\1+', r'\1', text)# Replace with only one (remove repetitions)  
