@@ -1,0 +1,22 @@
+# This CITATION.cff file was generated with cffinit.
+# Visit https://bit.ly/cffinit to generate yours today!
+
+cff-version: 1.2.0
+title: DarijaBert
+message: >-
+  If you use this model, please cite it using the
+  metadata from this file.
+type: software
+authors:
+  - given-names: Kamel Gaanoun
+    email: kamel.gaanoun@gmail.com
+    affiliation: INSEA
+  - given-names: Imade Benelallam
+    email: i.benelallam@insea.ac.ma
+    affiliation: INSEA/AIOX
+  - given-names: Abdoumohamed Naira
+    email: nabdoumohamed@insea.ac.ma
+    affiliation: INSEA/AIOX
+  - given-names: Anas Allak
+    email: aallak@insea.ac.ma
+    affiliation: INSEA/AIOX
