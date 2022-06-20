@@ -112,13 +112,13 @@ Comming soon.
 The model can be loaded directly using the Huggingface library:
 ```python
 from transformers import AutoTokenizer, AutoModel
-DarijaBert_tokenizer = AutoTokenizer.from_pretrained("Kamel/DarijaBERT")
-DarijaBert_model = AutoModel.from_pretrained("Kamel/DarijaBERT")
+DarijaBert_tokenizer = AutoTokenizer.from_pretrained("SI2M-Lab/DarijaBERT")
+DarijaBert_model = AutoModel.from_pretrained("SI2M-Lab/DarijaBERT")
 ```
 
 Checkpoint for the  Pytorch framework  is  available for downloading in the link below:
 
-https://huggingface.co/Kamel/DarijaBERT
+[https://huggingface.co/SI2M-Lab/DarijaBERT](https://huggingface.co/SI2M-Lab/DarijaBERT)
 
 This  checkpoint is  destined exclusively for research, any commercial use should be done with author's permission, please contact via email  at dbert@aiox-labs.com
 
