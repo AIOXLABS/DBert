@@ -107,6 +107,8 @@ We present the sentiment analysis F1-scores obtained with DarijaBERT. We first r
 ## Topic modeling
 Comming soon. 
 
+********* DarijaBERT models were transfered on the SI2M Lab HuggingFace repo : Juin 20th,2022 ********
+
 ## Loading the model
 
 The model can be loaded directly using the Huggingface library:
