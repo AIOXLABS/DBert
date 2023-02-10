@@ -56,56 +56,10 @@ unmasker(" اشنو [MASK] ليك ")
 
 # Downstream tasks 
 
-DarijaBERT was fine tuned on 3 downstream tasks, namely Dialect Identification (DI), Sentiment Analysis (SA), and Topic Modeling (TM). The results were compared to 6 other models, which support arabic either fully or partially:
+
+**UPCOMING**
 
 
-| Model            | Authors  | Arabic composition | Vocabulary size (Ar/all) | Num Tokens (Ar/all) | Data Size | Num of parameters | Num of Steps | 
-| ---------------- | -------  | ------------------ | ------------------------ | ------------------- | --------- | ----------------- | ------------ | 
-| XLM-RoBERTa-base | [Conneau et al.](https://aclanthology.org/2020.acl-main.747/)  | Partially (MSA+DA) | 14K/250K                 | 2.9B/295B           |  2.5TB    | 278M              | -            | 
-| mBERT-uncased    | [Devlin et al.](https://aclanthology.org/N19-1423/)   | Partially (MSA+DA) | 5K/110K                  | 153M/1.5B           | -         | 167M              | -            | 
-| AraBERTv0.2      | [Antoun et al.](https://aclanthology.org/2020.osact-1.2/)   | Fully (MSA)        | 60K/64K                  | 2.5B/2.5B           |  77GB     | 136M              | 3M           | 
-| CameL-DA         | [Inoue et al.](https://aclanthology.org/2021.wanlp-1.10.pdf)   | Fully (DA)         | 30K/30K                  | 5.8B/5.8B           |  54GB     | 109M              | 1M           | 
-| Qarib            | [Abdelali et al](https://www.researchgate.net/publication/349520378_Pre-Training_BERT_on_Arabic_Tweets_Practical_Considerations)   | Fully (MSA+DA)     | 64K/64K                  | 14B/14B             |  -        | 135M              | 10M          | 
-| MarBERT          | [Abdul-Mageed et al.](https://aclanthology.org/2021.acl-long.551/)   | Fully (MSA+DA)     | 100K/100K                | 15.6B/15.6B         |  128GB    | 163M              | 17M          | 
-| **DarijaBERT**            | **AIOX LABS\ /SI2M LAB INSEA**  | **Fully (DA)** | **80K/80K**       | **2.9B/295B**           |  **691MB**    | **147M**              | **235k**            | 
-
-## Dialect Identification
-
-This task was conducted on two datasets:
-* MSDA dialect detection dataset ([Boujou et al](https://www.researchgate.net/publication/349520583_An_open_access_NLP_dataset_for_Arabic_dialects_Data_collection_labeling_and_model_construction)) : ~50K social media posts in different Arabic dialects, transformed to a binary dataset, Moroccan dialect Vs other dialects
-* MADAR ([Bouamor et al.](https://aclanthology.org/L18-1535/) ) :  112K sequences in 25 dialects, transformed to a binary dataset, Moroccan dialect (Rabat and Fes cities)  Vs other dialects
-
-[![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/drive/1drU2CwZLtQ1BYLCuy_wXQhfWyL1ywvmK?usp=sharing)
-
-
-| Model            | MSDA (F1-score)  | MADAR (F1-score) | 
-| ---------------- | ---------------- | ---------------- | 
-| XLM-RoBERTa-base | 70.41  | 84.89 |  
-| mBERT-uncased    | 76.44  | 90.35 |   
-| AraBertv0.2      | 77.90  | 90.32 |  
-| CameL-DA         | 80.62  | 92.08 |   
-| Qarib            | 81.52  | 92.28 |   
-| MarBERT          | 84.25  | 92.00 |   
-| DBERT            | **84.48** | **92.87** |
-
-
-## Sentiment Analysis
-
-In order to detect the sentiment polarity of Moroccan dialect texts, we finetune the model and predict on the MSTD (Moroccan Sentiment Twitter Dataset) dataset ([Mihi et al.](https://thesai.org/Publications/ViewPaper?Volume=11&Issue=10&Code=IJACSA&SerialNo=45) ) composed of  12K tweets labeled as Negative, Objective, Positive or Sarcastic.
-
-We present the sentiment analysis F1-scores obtained with DarijaBERT. We first run the model on the dataset excluding sarcastic tweets, and then including them.
-| Model            | MSTD  (macro F1-score)<br /> <sub><sup>Positive/Negative/Objective </sup></sub>| MSTD <br /> (F1-score \[Sar/macro\])<br /><sub><sup>Positive/Negative/Objective/Sarcasm</sup></sub>| 
-| ---------------- | ---------------- | ---------------- | 
-| XLM-RoBERTa-base | 40.03  | \[26.02/32.15\] |  
-| mBERT-uncased    | 45.00  | \[39.21/41.61\] |   
-| AraBERTv0.2      | 61.42  | \[40.70/50.34\] |  
-| CameL-DA         | 66.04  | \[39.44/52.22\] |   
-| Qarib            |**69.88**  | \[36.20/34.85\] |   
-| MarBERT          | 68.74  | \[42.53/53.62\] |   
-| DarijaBERT            |  69.06   | **\[49.32/58.81\]** | 
-
-## Topic modeling
-Comming soon. 
 
 ********* DarijaBERT models were transfered on the SI2M Lab HuggingFace repo : Juin 20th,2022 ********
 
