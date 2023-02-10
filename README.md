@@ -13,6 +13,7 @@ We are releasing the following :
 * WordPiece tokenization code
 * Pre-trained model in both PyTorch and TensorFlow versions(future plan)
 * Example notebook to finetune the model
+* MTCD dataset
 
 # Pretraining data
 
