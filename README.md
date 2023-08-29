@@ -79,6 +79,18 @@ Checkpoint for the  Pytorch framework  is  available for downloading in the link
 
 This  checkpoint is  destined exclusively for research, any commercial use should be done with author's permission, please contact via email  at dbert@aiox-labs.com
 
+## Citation
+If you use our models  for your scientific publication, or if you find the resources in this repository useful, please cite our paper as follows (to be updated):
+```
+@article{gaanoun2023darijabert,
+  title={Darijabert: a Step Forward in Nlp for the Written Moroccan Dialect},
+  author={Gaanoun, Kamel and Naira, Abdou Mohamed and Allak, Anass and Benelallam, Imade},
+  year={2023}
+}
+
+```
 # Acknowledgments
 We gratefully acknowledge Google’s TensorFlow Research Cloud (TRC) program for providing us with free Cloud TPUs.
+
+
  
